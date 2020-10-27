@@ -1,2 +1,2 @@
-# CIDC-Inogral
-CIDC Inogral
+# CIDC-inaugural
+CIDC inaugural
