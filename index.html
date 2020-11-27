@@ -2,6 +2,16 @@
 <html>
 <head>
 <script type="text/javascript">
+    var buttons_id = ["button1","button2","button3","button4","button5","button6","button7","button8"];
+    for(let i=0;i<buttons_id.length;i++){
+    setTimeout(clickbutton,5000*i,buttons_id[i]);}
+
+
+
+function clickbutton(button_id){
+    var button = document.getElementById(button_id);
+    button.click();
+}
 function chgimg(x)
 {
 L1.src=x;
@@ -14,14 +24,14 @@ L1.src=x;
 <img id="L1" width="200"height="300"src="L1.jpg"/><br>
 <br><br><b>Welcome to Inaugurate the virtual lighting lamp</br>
  <meta name ="viewport" content=""width =device-width,initial-scale=1.0">
-<br><br><input type="button"value="Dr.P.S.Rana"onclick="chgimg('L2.jpg')"/>
-<input type="button"value="Dr.B.D.Mundhra"onclick="chgimg('L3.jpg')"/>
-<input type="button"value="Dr.U.K.Kohli"onclick="chgimg('L4.jpg')"/>
-<input type="button"value="Hon'ble Dr.Pramod Sawant(CM of Goa)"onclick="chgimg('L5.jpg')"/> 
-<br><br><input type="button"value="Dr.Ganeshi Lal(Governor of Odisha)"onclick="chgimg('L6.jpg')"/>  
-<input type="button"value="Dr.Rajeev Kumar"onclick="chgimg('L7.jpg')"/>
-<input type="button"value="Dr.P.R.Swarup"onclick="chgimg('L8.jpg')"/>
-<input type="button"value="Button-8"onclick="chgimg('L9.jpg')"/><br>  
+<br><br><input type="button"id='button1'value="Dr.P.S.Rana"onclick="chgimg('L2.jpg')"/>
+<input type="button" id='button2'value="Dr.B.D.Mundhra"onclick="chgimg('L3.jpg')"/>
+<input type="button" id='button3' value="Dr.U.K.Kohli"onclick="chgimg('L4.jpg')"/>
+<input type="button" id='button4' value="Shri Manohar Parrikkar(Honarable CM of Goa)"onclick="chgimg('L5.jpg')"/>
+<br><br><input type="button" id='button5' value="Prof. Ganeshi Lal(Governor of Odhisha)"onclick="chgimg('L6.jpg')"/>  
+<input type="button" id='button6' value="Dr.Rajeev Kumar"onclick="chgimg('L7.jpg')"/>
+<input type="button" id='button7' value="Dr.P.R.Swarup"onclick="chgimg('L8.jpg')"/>
+<input type="button" id='button8' value="Button-8"onclick="chgimg('L9.jpg')"/><br>  
 <br><br><br><input type="reset"value="Light"onclick="chgimg('L1.jpg')"/>
 <audio controls autoplay>
  <source src ="speech.aac"type="audio/mp3">
