@@ -37,7 +37,13 @@ L1.src=x;
   <source src="speech.aac" type="audio/aac">
   <source src="speech.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
-</audio>                                            
+</audio> 
+<script>
+function myFunction() {
+  var x = document.getElementById("myAudio").autoplay;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>                                            
 </center>
 </body>
 </html>
