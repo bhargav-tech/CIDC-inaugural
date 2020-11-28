@@ -17,8 +17,7 @@ function chgimg(x)
 L1.src=x;
 }
 </script>
-<button onclick="myFunction(true)" id="button1">speech</button>
-<button onclick="myFunction(false)">speech</button>
+<input type="button" id="button1"onclick="myFunction(true)"value="voice">
 <br>
 
 <script>
@@ -29,12 +28,12 @@ function myFunction(p) {
   
   var y = document.createElement("SOURCE");
   y.setAttribute("src", "speech.aac");
-  y.setAttribute("type", "audio/ogg");
+  y.setAttribute("audio", "audio/ogg");
   x.appendChild(y);
   
   var z = document.createElement("SOURCE");
   z.setAttribute("src", "speech.aac");
-  z.setAttribute("type", "audio/mpeg");
+  z.setAttribute("audio", "audio/mpeg");
   x.appendChild(z);
 
   // Set the autoplay property:
