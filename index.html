@@ -31,13 +31,8 @@ function myFunction(p) {
   y.setAttribute("audio", "audio/ogg");
   x.appendChild(y);
   
-  var z = document.createElement("SOURCE");
-  z.setAttribute("src", "speech.aac");
-  z.setAttribute("audio", "audio/mpeg");
-  x.appendChild(z);
-
   // Set the autoplay property:
-  x.autoplay = p;
+  x.autoplay = y;
 
   document.body.appendChild(x);
 }
